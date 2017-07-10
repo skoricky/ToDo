@@ -24,24 +24,32 @@
     </header>
     <section id="tasksZone" class="tasksZone">
         <div id="newTask" class="NewTask">
-            <input id="titleTaskText" class="titleTaskText" type="text">
+            <input id="newTaskTitleText" class="newTaskTitleText" type="text">
             <input id="addTaskButton" class="tasksButtons" type="submit" value="Add" onclick="addNewTask()">
+        </div>
+        <div id="currentTask" class="currentTask">
+            <div id="currentTaskStatus" class="taskStatus">...</div>
+            <label id="currentTaskTitle" class="currentTaskTitle">You don't have some task. Please add now...</label>
+            <label id="currentTaskMore" class="currentTaskMore">Task+</label>
+            <div class="help">?</div>
         </div>
         <div class="taskModal">
             <div id="taskModalStatus" class="taskStatus">CURRENT</div>
             <div>
                 <label>Begin task date:</label>
                 <input type="date" placeholder="YYYY-MM-DD">
-            </div>
-            <div>
                 <label>Task's deathline:</label>
                 <input type="date" placeholder="YYYY-MM-DD">
             </div>
-            <div id="contributors">
-
+            <div>
+                <label id="taskModalTitle" class="taskModalTitle">NO Task Title</label>
             </div>
-            <input id="taskModalBody" type="text" placeholder="task content...">
-            <div id="taskModalHelp" class="help">?</div>
+            <textarea id="taskModalBody" placeholder="task content..."></textarea>
+            <div id="contributors">
+                <input id="contributorsStack" class="contributorsStack" type="text" placeholder="Contributor1, Contributor2...">
+                <input id="addContributor" class="tasksButtons" type="submit" value="Add">
+            </div>
+            <div class="help">?</div>
         </div>
     </section>
     <footer>

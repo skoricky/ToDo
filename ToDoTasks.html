@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/ToDoTasks.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoTasks</title>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/ToDoTasks.js"></script>
+</head>
+<body>
+    <header class="head">
+        <div class="projectName">ToDo: Tasks</div>
+        <div class="menu">
+            <label class="menuCategory">Home</label>
+            <label class="menuCategory">Archive</label>
+            <label class="menuCategory">About</label>
+        </div>
+        <div class="Tools">
+            <label class="tool">Task+</label>
+            <label class="tool">Filter</label>
+        </div>
+    </header>
+    <section id="tasksZone" class="tasksZone">
+        <div id="newTask" class="NewTask">
+            <input id="titleTaskText" class="titleTaskText" type="text">
+            <input id="addTaskButton" class="tasksButtons" type="submit" value="Add" onclick="addNewTask()">
+        </div>
+        <div class="taskModal">
+            <div id="taskModalStatus" class="taskStatus">CURRENT</div>
+            <div>
+                <label>Begin task date:</label>
+                <input type="date" placeholder="YYYY-MM-DD">
+            </div>
+            <div>
+                <label>Task's deathline:</label>
+                <input type="date" placeholder="YYYY-MM-DD">
+            </div>
+            <div id="contributors">
+
+            </div>
+            <input id="taskModalBody" type="text" placeholder="task content...">
+            <div id="taskModalHelp" class="help">?</div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+    <label id="testLabel" class="testLabel">...</label>
+    <input id="testTextInput" class="testTextInput" type="text">
+    <input id="testButtonInput" class="testButtonInput" type="submit" value="Save" onclick="testButtonClick()">
+    <input id="testButtonClearInput" class="testButtonInput" type="submit" value="Clear" onclick="testButtonClear()">
+</body>
+</html>

@@ -22,32 +22,35 @@
             <label class="tool">Filter</label>
         </div>
     </header>
-    <section id="tasksZone" class="tasksZone">
+    <section>
         <div id="newTask" class="NewTask">
             <input id="newTaskTitleText" class="newTaskTitleText" type="text">
             <input id="addTaskButton" class="tasksButtons" type="submit" value="Add" onclick="addNewTask()">
         </div>
-        <div id="currentTask" class="currentTask">
-            <div id="currentTaskStatus" class="taskStatus">...</div>
-            <label id="currentTaskTitle" class="currentTaskTitle">You don't have some task. Please add now...</label>
-            <label id="currentTaskMore" class="currentTaskMore">Task+</label>
-            <div class="help">?</div>
+        <div id="tasksZone" class="tasksZone">
+            <div id="currentTask" class="currentTask">
+                <div id="currentTaskStatus" class="taskStatus">...</div>
+                <input id="currentTaskLabel" type="hidden" value="0">
+                <label id="currentTaskTitle" class="currentTaskTitle"></label>
+                <label id="currentTaskMore" class="currentTaskMore" onclick="javascript:editTask(this)">Task+</label>
+                <label id="currentTaskRemote" class="currentTaskRemote" onclick="javascript:remoteTask(this)">Remote</label>
+                <div class="help">?</div>
+            </div>
         </div>
         <div class="taskModal">
             <div id="taskModalStatus" class="taskStatus">CURRENT</div>
-            <div>
+            <input id="taskModalLabel" type="hidden" value="">
+            <div id="date">
                 <label>Begin task date:</label>
-                <input type="date" placeholder="YYYY-MM-DD">
+                <input id="dateIn" type="date" placeholder="YYYY-MM-DD">
                 <label>Task's deathline:</label>
-                <input type="date" placeholder="YYYY-MM-DD">
+                <input id="dateOut" type="date" placeholder="YYYY-MM-DD">
             </div>
-            <div>
-                <label id="taskModalTitle" class="taskModalTitle">NO Task Title</label>
-            </div>
-            <textarea id="taskModalBody" placeholder="task content..."></textarea>
+            <label id="taskModalTitle" class="taskModalTitle">NO Task Title</label>
+            <textarea id="taskModalBody" ></textarea>
             <div id="contributors">
                 <input id="contributorsStack" class="contributorsStack" type="text" placeholder="Contributor1, Contributor2...">
-                <input id="addContributor" class="tasksButtons" type="submit" value="Add">
+                <input id="saveEditTask" class="tasksButtons" type="submit" value="Add" onclick="saveTask()">
             </div>
             <div class="help">?</div>
         </div>

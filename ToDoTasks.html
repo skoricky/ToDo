@@ -16,16 +16,14 @@
             <label class="menuCategory">Home</label>
             <label class="menuCategory">Archive</label>
             <label class="menuCategory">About</label>
-        </div>
-        <div class="Tools">
             <label class="tool">Task+</label>
             <label class="tool">Filter</label>
         </div>
     </header>
     <section>
-        <div id="newTask" class="NewTask">
+        <div id="newTask" class="newTask">
             <input id="newTaskTitleText" class="newTaskTitleText" type="text">
-            <input id="addTaskButton" class="tasksButtons" type="submit" value="Add" onclick="addNewTask()">
+            <input id="addTaskButton" class="tasksAddButton" type="submit" value="Add" onclick="addNewTaskClick()">
         </div>
         <div id="tasksZone" class="tasksZone">
             <div id="currentTask" class="currentTask">
@@ -38,29 +36,25 @@
             </div>
         </div>
         <div class="taskModal">
-            <div id="taskModalStatus" class="taskStatus">CURRENT</div>
+            <input id="taskModalStatus" class="taskStatus" value="CURRENT">
             <input id="taskModalLabel" type="hidden" value="">
             <div id="date">
                 <label>Begin task date:</label>
-                <input id="dateIn" type="date" placeholder="YYYY-MM-DD">
+                <input id="dateIn" type="text" placeholder="YYYY-MM-DD">
                 <label>Task's deathline:</label>
-                <input id="dateOut" type="date" placeholder="YYYY-MM-DD">
+                <input id="dateOut" type="text" placeholder="YYYY-MM-DD">
             </div>
-            <label id="taskModalTitle" class="taskModalTitle">NO Task Title</label>
+            <input id="taskModalTitle" class="taskModalTitle" value="NO Task">
             <textarea id="taskModalBody" ></textarea>
             <div id="contributors">
                 <input id="contributorsStack" class="contributorsStack" type="text" placeholder="Contributor1, Contributor2...">
-                <input id="saveEditTask" class="tasksButtons" type="submit" value="Add" onclick="saveTask()">
+                <input id="saveEditTask" class="tasksEditButton" type="submit" value="Edit" onclick="saveTask()">
             </div>
             <div class="help">?</div>
         </div>
     </section>
     <footer>
-
+        <input id="ButtonClearInput" class="ButtonClearInput" type="submit" value="Clear" onclick="clear()">
     </footer>
-    <label id="testLabel" class="testLabel">...</label>
-    <input id="testTextInput" class="testTextInput" type="text">
-    <input id="testButtonInput" class="testButtonInput" type="submit" value="Save" onclick="testButtonClick()">
-    <input id="testButtonClearInput" class="testButtonInput" type="submit" value="Clear" onclick="testButtonClear()">
 </body>
 </html>

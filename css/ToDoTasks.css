@@ -98,11 +98,55 @@ img{
 
 /* ---------------ToDoTasks-------------------*/
 
+section {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+}
+
+header {
+    position: relative;
+    height: 100px;
+    background: black;
+    border-bottom: 2px solid #c3c0c0;
+    color: aliceblue;
+}
+
+.projectName, .menu {
+    width: 80%;
+    margin: auto;
+}
+
+.projectName {
+    font-size: 50px;
+}
+
+.menu {
+    position: absolute;
+    left: 10%;
+    bottom: 10px;
+}
+
+.currentTask, .newTask{
+    margin: 30px auto;
+
+}
+
 .currentTaskMore {
     cursor: pointer;
 }
 
 .taskModal {
+    display: none;
+}
+
+.ButtonClearInput {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+#currentTask {
     display: none;
 }
 

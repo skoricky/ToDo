@@ -132,7 +132,7 @@ header {
 
 }
 
-.currentTaskMore {
+.currentTaskMore, .currentTaskRemote {
     cursor: pointer;
 }
 
@@ -140,7 +140,7 @@ header {
     display: none;
 }
 
-.ButtonClearInput {
+.ButtonClear {
     position: absolute;
     right: 5%;
     bottom: 5%;

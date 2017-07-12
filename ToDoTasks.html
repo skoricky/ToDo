@@ -27,12 +27,11 @@
         </div>
         <div id="tasksZone" class="tasksZone">
             <div id="currentTask" class="currentTask">
-                <div id="currentTaskStatus" class="taskStatus">...</div>
+                <div id="currentTaskStatus" class="taskStatus">No task</div>
                 <input id="currentTaskLabel" type="hidden" value="0">
-                <label id="currentTaskTitle" class="currentTaskTitle"></label>
-                <label id="currentTaskMore" class="currentTaskMore" onclick="javascript:editTask(this)">Task+</label>
-                <label id="currentTaskRemote" class="currentTaskRemote" onclick="javascript:remoteTask(this)">Remote</label>
-                <div class="help">?</div>
+                <label id="currentTaskTitle" class="currentTaskTitle">"You don't have some task. Please add now..."</label>
+                <label id="currentTaskMore" class="currentTaskMore" onclick="javascript:editTaskClick(this)">Task+</label>
+                <label id="currentTaskRemote" class="currentTaskRemote">X</label>
             </div>
         </div>
         <div class="taskModal">
@@ -40,21 +39,20 @@
             <input id="taskModalLabel" type="hidden" value="">
             <div id="date">
                 <label>Begin task date:</label>
-                <input id="dateIn" type="text" placeholder="YYYY-MM-DD">
+                <input id="dateIn" type="text">
                 <label>Task's deathline:</label>
-                <input id="dateOut" type="text" placeholder="YYYY-MM-DD">
+                <input id="dateOut" type="text">
             </div>
             <input id="taskModalTitle" class="taskModalTitle" value="NO Task">
             <textarea id="taskModalBody" ></textarea>
             <div id="contributors">
-                <input id="contributorsStack" class="contributorsStack" type="text" placeholder="Contributor1, Contributor2...">
-                <input id="saveEditTask" class="tasksEditButton" type="submit" value="Edit" onclick="saveTask()">
+                <input id="saveEditTask" class="tasksEditButton" type="submit" value="Save" onclick="saveTaskClick()">
             </div>
             <div class="help">?</div>
         </div>
     </section>
     <footer>
-        <input id="ButtonClearInput" class="ButtonClearInput" type="submit" value="Clear" onclick="clear()">
+        <input id="ButtonClear" class="ButtonClear" type="submit" value="Clear" onclick="clearTasksClick()">
     </footer>
 </body>
 </html>

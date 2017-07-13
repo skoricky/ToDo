@@ -1,5 +1,5 @@
 /**
- * Created by ПриписновАЮ on 07.07.2017.
+ * Created by ПриписновАЮ
  */
 
 var tasksArray = [];
@@ -21,7 +21,7 @@ function getTasks() {
 
 function addNewTaskClick() {
     var title = $("#newTaskTitleText").val();
-    addNewTask(title, taskStatus);
+    addNewTask(title);
 }
 
 function addNewTask(title) {
@@ -73,8 +73,6 @@ function editTaskClick(element) {
     $('.currentTaskMore').each(function () {
         if(element === this) {
             index = (Number)($(this).parent().children("#currentTaskLabel").val());
-
-
             editTask(index);
         }
     })
@@ -90,7 +88,7 @@ function editTask(index) {
         modal.children("#date").children("#dateIn").html(tasksArray[index].dataBegin);
         modal.children("#date").children("#dateOut").html(tasksArray[index].dataDeathLine);
     } else {
-        var title = "task1";
+        var title = "New great task...";
         addNewTask(title);
         modal.children("#taskModalTitle").val(title);
         modal.children("#taskModalBody").html("");
@@ -121,9 +119,8 @@ function showEditTask (index) {
     var showTask = tasksArray[index];
     tasksArray.splice(index, 1);
     tasksArray.push(showTask);
-    labelSort();
     setLocalStorage();
-    $(".currentTask").hide();
+    remoteTasks();
     getTasks();
 }
 
@@ -144,12 +141,6 @@ $(document).on('click', '.currentTaskRemote', function (element) {
     setLocalStorage();
 });
 
-function labelSort () {
-    for(var i = 0; i < tasksArray.length; i++) {
-        tasksArray[i].label = i.toString();
-    }
-}
-
 function getLocalStorage() {
     if (localStorage.length > 0) {
         for (var i = 0; i < localStorage.length; i++) {
@@ -165,9 +156,6 @@ function getLocalStorage() {
         var taskCloneElement = $("#currentTask").clone();
         taskCloneElement.prependTo("#tasksZone");
         taskCloneElement.show();
-        /*$("#currentTask").show();
-        $("#currentTask").children("#currentTaskStatus").html("No task");
-        $("#currentTask").children("#currentTaskTitle").html("You don't have some task. Please add now...");*/
     }
 }
 

@@ -102,6 +102,7 @@ section {
     position: relative;
     max-width: 80%;
     margin: auto;
+    background: white;
 }
 
 header {
@@ -143,7 +144,7 @@ header {
     width: 600px;
     height: 80px;
     border: 2px solid #c3c0c0;
-
+    z-index: 10;
 }
 .currentTaskTitle {
     position: absolute;
@@ -187,6 +188,8 @@ header {
     width: 450px;
     height: 400px;
     border: 2px solid #c3c0c0;
+    background: white;
+    z-index: 11;
 }
 
 .taskModalTitle, .date, #dateIn, #dateOut, .dateIn, .dateOut {

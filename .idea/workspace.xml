@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2a017b57-8c8b-493c-8159-9eb7e4570266" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ToDoTasks.css" afterPath="$PROJECT_DIR$/css/ToDoTasks.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,17 +18,17 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ToDoTasks.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ToDoTasks.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ToDoTasks.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            <state relative-caret-position="68">
+              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ToDoTasks.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ToDoTasks.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/ToDoTasks.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -40,8 +41,8 @@
       <file leaf-file-name="ToDoTasks.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/ToDoTasks.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="226" column="16" lean-forward="true" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
+            <state relative-caret-position="379">
+              <caret line="191" column="16" lean-forward="true" selection-start-line="191" selection-start-column="16" selection-end-line="191" selection-end-column="16" />
               <folding>
                 <element signature="e#688#815#0" expanded="false" />
                 <element signature="e#822#879#0" expanded="false" />
@@ -107,8 +108,8 @@
         <option value="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/data/js/ch-content-script.js" />
         <option value="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/data/js/libs/jquery-3.1.1.min.js" />
         <option value="$PROJECT_DIR$/ToDoTasks.html" />
-        <option value="$PROJECT_DIR$/css/ToDoTasks.css" />
         <option value="$PROJECT_DIR$/js/ToDoTasks.js" />
+        <option value="$PROJECT_DIR$/css/ToDoTasks.css" />
       </list>
     </option>
   </component>
@@ -294,7 +295,9 @@
       <workItem from="1499841404264" duration="21810000" />
       <workItem from="1499870042784" duration="4770000" />
       <workItem from="1499876138327" duration="14001000" />
-      <workItem from="1499895868638" duration="8578000" />
+      <workItem from="1499895868638" duration="8892000" />
+      <workItem from="1499956111895" duration="5000" />
+      <workItem from="1500010787298" duration="630000" />
     </task>
     <task id="LOCAL-00001" summary="html">
       <created>1499708074404</created>
@@ -338,11 +341,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499904475718</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="final">
+      <created>1499904483276</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1499904483276</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125607000" />
+    <option name="totallyTimeSpent" value="126556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
@@ -391,6 +401,96 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ToDoTasks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/ToDoTasks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3842">
+          <caret line="226" column="16" lean-forward="false" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
+          <folding>
+            <element signature="e#688#815#0" expanded="false" />
+            <element signature="e#822#879#0" expanded="false" />
+            <element signature="e#891#919#0" expanded="false" />
+            <element signature="e#952#1010#0" expanded="false" />
+            <element signature="e#1064#1083#0" expanded="false" />
+            <element signature="e#1107#1138#0" expanded="false" />
+            <element signature="e#1159#1195#0" expanded="false" />
+            <element signature="e#1200#1252#0" expanded="false" />
+            <element signature="e#1257#1311#0" expanded="false" />
+            <element signature="e#1400#1422#0" expanded="false" />
+            <element signature="e#1430#1454#0" expanded="false" />
+            <element signature="e#1559#1638#0" expanded="false" />
+            <element signature="e#1644#1775#0" expanded="false" />
+            <element signature="e#1789#1891#0" expanded="false" />
+            <element signature="e#1900#1949#0" expanded="false" />
+            <element signature="e#1968#2023#0" expanded="false" />
+            <element signature="e#2046#2073#0" expanded="false" />
+            <element signature="e#2077#2101#0" expanded="false" />
+            <element signature="e#2106#2125#0" expanded="false" />
+            <element signature="e#2142#2199#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ToDoTasks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ToDoTasks.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/ToDoTasks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3842">
+          <caret line="226" column="16" lean-forward="true" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
+          <folding>
+            <element signature="e#688#815#0" expanded="false" />
+            <element signature="e#822#879#0" expanded="false" />
+            <element signature="e#891#919#0" expanded="false" />
+            <element signature="e#952#1010#0" expanded="false" />
+            <element signature="e#1064#1083#0" expanded="false" />
+            <element signature="e#1107#1138#0" expanded="false" />
+            <element signature="e#1159#1195#0" expanded="false" />
+            <element signature="e#1200#1252#0" expanded="false" />
+            <element signature="e#1257#1311#0" expanded="false" />
+            <element signature="e#1400#1422#0" expanded="false" />
+            <element signature="e#1430#1454#0" expanded="false" />
+            <element signature="e#1559#1638#0" expanded="false" />
+            <element signature="e#1644#1775#0" expanded="false" />
+            <element signature="e#1789#1891#0" expanded="false" />
+            <element signature="e#1900#1949#0" expanded="false" />
+            <element signature="e#1968#2023#0" expanded="false" />
+            <element signature="e#2046#2073#0" expanded="false" />
+            <element signature="e#2077#2101#0" expanded="false" />
+            <element signature="e#2106#2125#0" expanded="false" />
+            <element signature="e#2142#2199#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ToDoTasks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ToDoTasks.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -868,18 +968,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ToDoTasks.html">
+    <entry file="file://$PROJECT_DIR$/js/ToDoTasks.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        <state relative-caret-position="17">
+          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/ToDoTasks.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="226" column="16" lean-forward="true" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="16" />
+        <state relative-caret-position="379">
+          <caret line="191" column="16" lean-forward="true" selection-start-line="191" selection-start-column="16" selection-end-line="191" selection-end-column="16" />
           <folding>
             <element signature="e#688#815#0" expanded="false" />
             <element signature="e#822#879#0" expanded="false" />
@@ -905,10 +1005,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/ToDoTasks.js">
+    <entry file="file://$PROJECT_DIR$/ToDoTasks.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="25" lean-forward="false" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
           <folding />
         </state>
       </provider>

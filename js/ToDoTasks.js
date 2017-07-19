@@ -79,21 +79,22 @@ function editTaskClick(element) {
 }
 
 function editTask(index) {
-    $(".taskModal").show();
-    var modal = $(".taskModal");
+    var modal = $("#taskModal").clone(true);
+    modal.prependTo("section");
+    modal.show();
     modal.children("#taskModalLabel").val(index.toString());
     if(tasksArray.length > 0) {
         modal.children("#taskModalTitle").val(tasksArray[index].title);
         modal.children("#taskModalBody").html(tasksArray[index].taskBody);
-        modal.children("#date").children("#dateIn").html(tasksArray[index].dataBegin);
-        modal.children("#date").children("#dateOut").html(tasksArray[index].dataDeathLine);
+        modal.children("#date").children("#dateIn").val(tasksArray[index].dataBegin);
+        modal.children("#date").children("#dateOut").val(tasksArray[index].dataDeathLine);
     } else {
         var title = "New great task...";
         addNewTask(title);
         modal.children("#taskModalTitle").val(title);
         modal.children("#taskModalBody").html("");
-        modal.children("#date").children("#dateIn").html("");
-        modal.children("#date").children("#dateOut").html("");
+        modal.children("#date").children("#dateIn").val("");
+        modal.children("#date").children("#dateOut").val("");
     }
 
 }
@@ -103,16 +104,22 @@ function saveTaskClick() {
 }
 
 function saveTask() {
-    var modal = $(".taskModal");
-    var index = (Number)(modal.children("#taskModalLabel").val());
-    tasksArray[index].title = modal.children("#taskModalTitle").val();
-    tasksArray[index].taskBody = modal.children("#taskModalBody").val();
-    tasksArray[index].taskStatus = modal.children("#taskModalStatus").val();
-    tasksArray[index].dataBegin = modal.children("#date").children("#dateIn").val();
-    tasksArray[index].dataDeathLine = modal.children("#date").children("#dateOut").val();
-    setLocalStorage();
-    showEditTask(index);
-    modal.hide();
+
+    $("#taskModal").each(function () {
+        if($(this).is(":visible")) {
+            var modal = $(this);
+            var index = (Number)(modal.children("#taskModalLabel").val());
+            tasksArray[index].title = modal.children("#taskModalTitle").val();
+            tasksArray[index].taskBody = modal.children("#taskModalBody").val();
+            tasksArray[index].taskStatus = modal.children("#taskModalStatus").val();
+            tasksArray[index].dataBegin = modal.children("#date").children("#dateIn").val();
+            tasksArray[index].dataDeathLine = modal.children("#date").children("#dateOut").val();
+            setLocalStorage();
+            showEditTask(index);
+            modal.remove();
+        }
+    });
+
 }
 
 function showEditTask (index) {
